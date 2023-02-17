@@ -10,17 +10,16 @@ static mut X: String = String::new();
 static mut Y: String = String::new();
 static mut add: String = String::new();
 
-pub fn main_op(users:&mut HashMap<String,usr_details>) {
+pub fn main_op(users: &mut HashMap<String, usr_details>) {
     check_username();
     unsafe {
         let details = usr_details {
             name: nm.to_string(),
             password: Y.to_string(),
             username: X.to_string(),
-            address: add.to_string()
+            address: add.to_string(),
         };
-        users.insert(nm.to_string(), details);
-
+        users.insert(X.to_string(), details);
     }
 }
 
