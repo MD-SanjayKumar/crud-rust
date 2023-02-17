@@ -21,10 +21,10 @@ pub fn check_login(users: &mut HashMap<String, usr_details>) {
                     }
                     println!("\nWelcome {}", cf.name);
                 } else {
-                    println!("Please check input./else");
+                    println!("Please check input.");
                 }
             }
-            None => println!("Please check input./none"),
+            None => println!("Please check input."),
         }
     }
 }
